@@ -1,5 +1,5 @@
 # DNS-Server-Checker
-Python Script that checks high number of DNS servers simultaneously if they are live or not
+Python Script that checks high number of DNS servers simultaneously, whether they are live or not
 
 Script uses linux dig command to send 'version.bind txt chaos' query to servers, if there is answer (empty also qualifies), script returns address as live, and if there is timeout, this means that server is down.
 It writes all results in upservers.txt and downservers.txt files.
